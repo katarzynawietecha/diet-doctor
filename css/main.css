@@ -1,5 +1,24 @@
 body {
-  color: ghostwhite; }
+  color: ghostwhite;
+  font-weight: 10px; }
 
-ul {
-  padding: 0 20%; }
+h1 {
+  font-size: 6rem; }
+
+h2 {
+  font-size: 5rem; }
+
+#navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2; }
+  #navigation li {
+    display: inline-block;
+    padding: 20px; }
+  #navigation .active {
+    background-color: #B4D455; }
+
+.section {
+  padding: 5vh 5vw; }

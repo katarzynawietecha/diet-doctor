@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/wietecha-mrzyglod/diet-doctor#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.1",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "gulp-cli": "^2.2.0",
     "gulp-sourcemaps": "^2.6.4"
   }
 }

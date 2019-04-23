@@ -1,0 +1,30 @@
+body {
+	color: ghostwhite;
+	font-weight: 10px;
+}
+h1 {
+	font-size: 6rem;
+}
+h2 {
+	font-size: 5rem;
+}
+// Navigation
+#navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 2;
+
+	li {
+		display: inline-block;
+		padding: 20px;
+	}
+	.active {
+		background-color: #B4D455;
+	}
+}
+//content
+.section {
+	padding: 5vh 5vw;
+}
