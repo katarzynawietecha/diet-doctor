@@ -1,5 +1,5 @@
 new fullpage("#fullpage", {
-  sectionsColor: ["#0798ec", "#2fd069", "#ff8959", "#fc6c7c", "#846599"],
+  sectionsColor: ["#00ab3d", "#846599", "#fc6c7c", "#ff8959", "#333130"],
   navigation: true,
   navigationTooltips: ["Start", "What's diet?", "About me", "Offer", "Contact" ],
   anchors: ["start", "diet", "about", "offer", "contact" ],

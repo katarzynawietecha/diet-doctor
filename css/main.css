@@ -3,10 +3,16 @@ body {
   font-weight: 10px; }
 
 h1 {
-  font-size: 6rem; }
+  font-size: 4rem; }
 
 h2 {
-  font-size: 5rem; }
+  font-size: 3.8rem; }
+
+h3 {
+  font-size: 3.5rem; }
+
+h4 {
+  font-size: 3rem; }
 
 #navigation {
   position: fixed;
@@ -20,5 +26,47 @@ h2 {
   #navigation .active {
     background-color: #B4D455; }
 
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  border: 0.5px solid #474747; }
+
 .section {
   padding: 5vh 5vw; }
+
+.title {
+  margin: 5vh auto; }
+
+.contact .title span {
+  display: inline-block; }
+
+.contact .title ul {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 10px; }
+  .contact .title ul li {
+    text-align: left; }
+
+.contact__icon {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contact form input, .contact form textarea, .contact form button {
+  display: block;
+  width: 50vw;
+  margin: 5px auto;
+  border-radius: 3px;
+  padding: 5px; }
+  @media (max-width: 480px) {
+    .contact form input, .contact form textarea, .contact form button {
+      width: 80vw; } }
+
+.contact form button {
+  background-color: #ff8959;
+  color: #fff; }
+  .contact form button:active {
+    border-color: #ff8959; }
