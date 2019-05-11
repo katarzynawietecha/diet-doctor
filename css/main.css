@@ -1,3 +1,13 @@
+@keyframes cubeMove {
+  25% {
+    transform: rotateX(90deg); }
+  50% {
+    transform: rotateX(180deg); }
+  75% {
+    transform: rotateX(270deg); }
+  100% {
+    transform: rotateX(360deg); } }
+
 body {
   color: ghostwhite;
   font-weight: 10px; }
@@ -48,12 +58,46 @@ h4 {
 .contact__icon {
   width: 100px;
   height: 100px;
-  background-color: #fff;
+  background-color: #ff8959;
   border-radius: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.contact .contact__title > .title {
+  display: inline-block;
+  height: 60px;
+  padding-bottom: 20px; }
+
+.contact .contact__title > .contact__cube {
+  display: inline-block;
+  margin-left: 12px;
+  position: relative;
+  transition: transform .2s;
+  width: 450px;
+  height: 60px;
+  animation: cubeMove 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+  transform: rotateY(-100px); }
+  .contact .contact__title > .contact__cube .contact__tab {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+    .contact .contact__title > .contact__cube .contact__tab:first-child {
+      transform: rotateX(0deg) translate3d(0, 0, 30px);
+      background-color: #00ab3d; }
+    .contact .contact__title > .contact__cube .contact__tab:nth-child(2) {
+      transform: rotateX(-90deg) translate3d(0, 0, 30px);
+      background-color: #846599; }
+    .contact .contact__title > .contact__cube .contact__tab:nth-child(3) {
+      transform: rotateX(-180deg) translate3d(0, 0, 30px);
+      background-color: #fc6c7c; }
+    .contact .contact__title > .contact__cube .contact__tab:last-child {
+      transform: rotateX(90deg) translate3d(0, 0, 30px);
+      background-color: #ff8959; }
+    .contact .contact__title > .contact__cube .contact__tab .title {
+      margin: 0; }
 
 .contact form input, .contact form textarea, .contact form button {
   display: block;
